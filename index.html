@@ -11,7 +11,6 @@
     <link rel="manifest" href="images/site.webmanifest">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <base target="_blank">
   </head>
   <body>
     <header class="topbar">
@@ -269,6 +268,21 @@
       </div>
     </footer>
 
+    <script>
+      // Open only external links in a new tab; in-page anchors stay in the same tab
+      (function() {
+        var links = document.querySelectorAll('a[href^="http"]');
+        links.forEach(function(a){
+          try {
+            var u = new URL(a.getAttribute('href'), window.location.href);
+            if (u.hostname && u.hostname !== window.location.hostname) {
+              a.setAttribute('target','_blank');
+              a.setAttribute('rel','noopener noreferrer');
+            }
+          } catch (e) { /* ignore invalid URLs */ }
+        });
+      })();
+    </script>
     <script src="assets/js/main.min.js"></script>
   </body>
   </html>

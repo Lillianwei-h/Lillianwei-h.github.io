@@ -75,16 +75,19 @@ a:hover { text-decoration: underline; }
 /* Media */
 img { max-width: 100%; height: auto; }
 
+/* Ensure in-page anchor jumps aren't hidden behind sticky header */
+[id] { scroll-margin-top: 90px; }
+
 /* Responsive */
 @media (max-width: 900px) {
   /* Avoid fixed header height clipping content on small screens */
   .topbar { height: auto; }
   .topbar .container { flex-wrap: wrap; gap: 8px; padding: 10px 16px; }
-  .brand { font-size: 22px; }
-  .nav { gap: 8px; flex-wrap: wrap; flex-basis: 100%; justify-content: flex-start; }
+  .brand { display: none; }
+  .nav { font-size: 16px; gap: auto; flex-wrap: wrap; flex-basis: 100%; justify-content: flex-start; }
 
   /* Add horizontal breathing room on mobile */
-  .container { padding: 0 20px; }
+  .container { margin-left: 5%; margin-right: 5%; }
 
   .hero { grid-template-columns: 1fr; text-align: left; padding: 28px 0 12px; gap: 14px; }
   .hero__avatar { width: 100px; height: 100px; }
