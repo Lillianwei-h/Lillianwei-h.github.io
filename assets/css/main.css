@@ -28,9 +28,11 @@ body {
 .topbar { position: sticky; top: 0; height: 100px; z-index: 100; background: linear-gradient(to bottom, #627bdf 10%, rgba(109, 102, 231, 0.565) 50%, rgba(211, 196, 255, 0) 100%);} 
 .topbar .container { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; }
 .brand { font-weight: 900; text-decoration: none; color: #ffffff; font-size: 30px; letter-spacing: .6px; text-shadow: 0 1px 2px rgba(0,0,0,0.12); }
+.brand .brand-icon { margin-left: 8px; font-size: 0.9em; vertical-align: -2px; }
 .nav { display: flex; gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .nav a { color: #ffffff; text-decoration: none; opacity: .95; border-bottom: 2px solid transparent; padding-bottom: 2px; white-space: nowrap; text-shadow: 0 1px 2px rgba(0,0,0,0.10); }
 .nav a:hover { border-bottom-color: rgba(255,255,255,0.95); }
+#nav-mobile { display: none; }
 
 /* Hero */
 .hero { display: grid; grid-template-columns: 200px 1fr; gap: 22px; align-items: center; padding: 48px 0 18px; }
@@ -84,7 +86,15 @@ img { max-width: 100%; height: auto; }
   .topbar { height: auto; }
   .topbar .container { flex-wrap: wrap; gap: 8px; padding: 10px 16px; }
   .brand { display: none; }
-  .nav { font-size: 16px; gap: auto; flex-wrap: wrap; flex-basis: 100%; justify-content: flex-start; }
+  .nav {display: none;}
+  #nav-mobile { 
+    display: flex; 
+    font-size: 16px; 
+    flex-wrap: wrap; 
+    flex-basis: 100%; 
+    justify-content: space-between; /* 间距自适应撑满整行 */
+    width: 100%;
+  }
 
   /* Add horizontal breathing room on mobile */
   .container { margin-left: 5%; margin-right: 5%; }
