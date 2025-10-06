@@ -25,7 +25,7 @@ body {
 .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
 
 /* Top bar */
-.topbar { position: sticky; top: 0; height: 100px; z-index: 100; background: linear-gradient(to bottom, #627bdf 10%, rgba(109, 102, 231, 0.565) 50%, rgba(211, 196, 255, 0) 100%);}
+.topbar { position: sticky; top: 0; height: 100px; z-index: 100; background: linear-gradient(to bottom, #627bdf 10%, rgba(109, 102, 231, 0.565) 50%, rgba(211, 196, 255, 0) 100%);} 
 .topbar .container { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; }
 .brand { font-weight: 900; text-decoration: none; color: #ffffff; font-size: 30px; letter-spacing: .6px; text-shadow: 0 1px 2px rgba(0,0,0,0.12); }
 .nav { display: flex; gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
@@ -77,8 +77,37 @@ img { max-width: 100%; height: auto; }
 
 /* Responsive */
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; text-align: left; }
-  .hero__avatar { width: 110px; height: 110px; }
-  .paper-box { grid-template-columns: 1fr; }
-  .nav { gap: 8px; }
+  /* Avoid fixed header height clipping content on small screens */
+  .topbar { height: auto; }
+  .topbar .container { flex-wrap: wrap; gap: 8px; padding: 10px 16px; }
+  .brand { font-size: 24px; }
+  .nav { gap: 8px; flex-wrap: wrap; }
+
+  .container { padding: 0 16px; }
+
+  .hero { grid-template-columns: 1fr; text-align: left; padding: 28px 0 12px; gap: 14px; }
+  .hero__avatar { width: 100px; height: 100px; }
+  .hero__title { font-size: 30px; }
+  .hero__subtitle { margin-bottom: 12px; }
+  .hero__lead { margin-bottom: 14px; }
+  .hero__cta { gap: 8px; }
+
+  .section { padding: 12px 0 4px; }
+  .section__title { font-size: 22px; margin: 14px 0 10px; }
+  .pub-title { font-size: 18px; }
+  .pub-authors { font-size: 13.5px; }
+
+  .paper-box { grid-template-columns: 1fr; padding: 14px; gap: 12px; }
+}
+
+/* Tighter tweaks for small phones */
+@media (max-width: 600px) {
+  .brand { font-size: 22px; }
+  .hero__title { font-size: 28px; }
+  .btn { padding: 8px 12px; }
+
+  /* Prevent third‑party embeds or inline fixed widths from overflowing */
+  div[style*="width: 400px"] { width: 100% !important; }
+  img[style*="width: 45%"] { width: 100% !important; }
+  img[style*="width: 25%"] { width: 48% !important; }
 }
