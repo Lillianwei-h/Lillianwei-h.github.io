@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Siwei Han</title>
+    <meta name="description" content="Siwei Han's home page" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <base target="_blank">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <a class="brand" href="#home">Siwei Han</a>
+        <nav class="nav">
+          <a href="#news"><b>News</b></a>
+          <a href="#pubs"><b>Publications</b></a>
+          <a href="#edu"><b>Education</b></a>
+          <a href="#intern"><b>Internships</b></a>
+          <a href="#awards"><b>Awards</b></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero container">
+        <img class="hero__avatar" src="images/android-chrome-512x512.png" alt="Siwei Han"/>
+        <div class="hero__text">
+          <h1 class="hero__title">Siwei Han</h1>
+          <p class="hero__subtitle">UNC‑Chapel Hill · Fudan University</p>
+          <p class="hero__lead">
+            Hi! I'm Siwei Han (韩偲蔚), a first-year Ph.D. student at the
+            <a href="https://cs.unc.edu/">Department of Computer Science</a>, <a href="https://www.unc.edu/">UNC‑Chapel Hill</a>, advised by Prof. <a href="https://www.huaxiuyao.io">Huaxiu Yao</a>.
+            I am interested in LLM/VLM Alignment and Multimodal Multiagent System, aiming to build more reliable and functional models and agents.
+          </p>
+          <div class="hero__cta">
+            <a class="btn" href="mailto:siweih@cs.unc.edu"><i class="fa-solid fa-envelope icon" aria-hidden="true"></i>Email</a>
+            <a class="btn btn--ghost" href="https://scholar.google.com/citations?user=oT1QQs8AAAAJ"><i class="fa-solid fa-graduation-cap icon" aria-hidden="true"></i>Google Scholar</a>
+            <a class="btn btn--ghost" href="https://github.com/Lillianwei-h"><i class="fa-brands fa-github icon" aria-hidden="true"></i>GitHub</a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/siwei-han-4553142b7"><i class="fa-brands fa-linkedin icon" aria-hidden="true"></i>LinkedIn</a>
+            <a class="btn btn--ghost" href="https://twitter.com/lillianwei423"><i class="fa-brands fa-twitter icon" aria-hidden="true"></i>Twitter</a>
+          </div>
+          <div class="note"><b>I’m open to 2026 summer internships — feel free to reach out!</b></div>
+        </div>
+      </section>
+
+      <section id="news" class="section container">
+        <h2 class="section__title">🔥 News</h2>
+        <p><em><strong>2025.09</strong> Three paper are accepted by NIPS 2025, including one spotlight!</em></p>
+        <p><em><strong>2025.09</strong> One paper is accepted by EMNLP 2025 Main as an Oral!</em></p>
+        <p><em><strong>2025.03</strong> We present <a href="https://arxiv.org/abs/2503.13964">MDocAgent: A Multi-Modal Multi-Agent Framework for Document Understanding</a>! </em></p>
+        <p><em><strong>2025.02</strong> MMIE is selected to be presented as an Oral!</em></p>
+        <p><em><strong>2025.01</strong> MMIE is accepted by ICLR 2025!</em></p>
+
+      </section>
+
+      <section id="pubs" class="section container">
+        <h2 class="section__title">📝 Selected Publications</h2>
+        <p>
+          <a class="btn btn--soft" href="https://scholar.google.com/citations?user=oT1QQs8AAAAJ" aria-label="View full publications on Google Scholar">
+            <i class="fa-solid fa-list-ul icon" aria-hidden="true"></i>Full Publications
+          </a>
+        </p>
+        <p>†: Equal contribution</p>
+
+        <div class='paper-box'>
+          <div class='paper-box-image'>
+            <div>
+              <div class="badge">Preprint</div>
+              <img src='https://github.com/user-attachments/assets/b5879006-dfb6-4086-95ab-fa5e4d4ce97f' alt="MDocAgent" width="100%" />
+            </div>
+          </div>
+          <div class='paper-box-text'>
+            <div class="pub-title"><a href="https://arxiv.org/abs/2503.13964">MDocAgent: A Multi-Modal Multi-Agent Framework for Document Understanding</a></div>
+            <div class="pub-authors"><strong>Siwei Han</strong>, Peng Xia, Ruiyi Zhang, Tong Sun, Yun Li, Hongtu Zhu, Huaxiu Yao</div>
+            We present MDocAgent (A Multi-Modal Multi-Agent Framework for Document Understanding), a novel RAG and multi-agent framework that leverages both text and image to solve DocQA problems. Our system employs five specialized agents: a general agent, a critical agent, a text agent, an image agent and a summarizing agent. These agents engage in multi-modal context retrieval, combining their individual insights to achieve a more comprehensive understanding of the document's content. This collaborative approach enables the system to synthesize information from both textual and visual components, leading to improved accuracy in question answering. Our data and code are available at <a href="https://github.com/aiming-lab/MDocAgent">github</a>.
+          </div>
+        </div>
+
+        <div class='paper-box'>
+          <div class='paper-box-image'>
+            <div>
+              <div class="badge">ICLR 2025 Oral</div>
+              <img src='https://github.com/user-attachments/assets/07cfaa1e-f99b-47e7-846d-65337948d517' alt="MMIE" width="100%" />
+            </div>
+          </div>
+          <div class='paper-box-text'>
+            <div class="pub-title"><a href="https://arxiv.org/abs/2410.10139">MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models</a></div>
+            <div class="pub-authors">Peng Xia†, <strong>Siwei Han†</strong>, Shi Qiu†, Yiyang Zhou, Zhaoyang Wang, Wenhao Zheng, Zhaorun Chen, Chenhang Cui, Mingyu Ding, Linjie Li, Lijuan Wang, Huaxiu Yao</div>
+            In this paper, we introduce MMIE, a robust, knowledge-intensive benchmark to evaluate interleaved multimodal comprehension and generation in LVLMs. With 20K+ examples covering 12 fields and 102 subfields, including mathematics, coding, physics, literature, health, and arts. It supports both interleaved inputs and outputs, offering a mix of multiple-choice and open-ended question formats to evaluate diverse competencies. Moreover, we propose a reliable automated evaluation metric, leveraging a scoring model fine-tuned with human-annotated data and systematic evaluation criteria, aimed at reducing bias and improving evaluation accuracy. We publicly release our benchmark and code on <a href="https://mmie-bench.github.io">MMIE</a>.
+          </div>
+        </div>
+
+        <div class='paper-box'>
+          <div class='paper-box-image'>
+            <div>
+              <div class="badge">ICML 2024</div>
+              <img src='images/CompToT.png' alt="CompToT" width="100%" />
+            </div>
+          </div>
+          <div class='paper-box-text'>
+            <div class="pub-title"><a href="https://arxiv.org/abs/2402.06918">Generating Chain-of-Thoughts with a Direct Pairwise-Comparison Approach to Searching for the Most Promising Intermediate Thought</a></div>
+            <div class="pub-authors">Zhen-Yu Zhang, <strong>Siwei Han</strong>, Huaxiu Yao, Gang Niu, Masashi Sugiyama</div>
+            In this paper, we propose a novel comparison-based CoT generation algorithm that directly identifies the most promising thoughts with the noisy feedback from the LLM. In each round, we randomly pair intermediate thoughts and directly prompt the LLM to select the more promising one from each pair, allowing us to identify the most promising thoughts through an iterative process. To further model the noise in the comparison, we resort to the techniques of ensemble and dueling bandits and propose two variants of the proposed algorithm.
+          </div>
+        </div>
+
+        <div class='paper-box'>
+          <div class='paper-box-image'>
+            <div>
+              <div class="badge">EMNLP 2025 Main (Oral)</div>
+              <img src='https://github.com/user-attachments/assets/d1259661-64f4-47f5-858d-98cee0b7b1f8' alt="GLIMPSE" width="100%" />
+            </div>
+          </div>
+          <div class='paper-box-text'>
+            <div class="pub-title"><a href="https://arxiv.org/abs/2507.09491">GLIMPSE: Do Large Vision-Language Models Truly Think With Videos or Just Glimpse at Them?</a></div>
+            <div class="pub-authors">Yiyang Zhou†, Linjie Li†, Shi Qiu†, Zhengyuan Yang, Yuyang Zhao, <strong>Siwei Han</strong>, Yangfan He, Kangqi Li, Haonian Ji, Zihao Zhao, Haibo Tong, Lijuan Wang, Huaxiu Yao</div>
+            In this paper, we introduce GLIMPSE, a benchmark designed to evaluate whether large vision-language models (LVLMs) can truly think with videos rather than rely on static frames. Unlike prior video benchmarks that resemble image-based tasks, GLIMPSE emphasizes holistic temporal reasoning through 3,269 videos and 4,342 human-crafted questions across 11 categories. Each question requires full-context understanding of the entire video. While humans achieve 94.82% accuracy, the best LVLM, GPT-o3, reaches only 66.43%, revealing significant gaps in genuine video reasoning.
+          </div>
+        </div>
+
+        <div class='paper-box'>
+          <div class='paper-box-image'>
+            <div>
+              <div class="badge">NIPS 2025 Spotlight</div>
+              <img src='https://github.com/user-attachments/assets/e948404d-81e1-4ba6-8547-7ceebbe30d7a' alt="MJ-VIDEO" width="100%" />
+            </div>
+          </div>
+          <div class='paper-box-text'>
+            <div class="pub-title"><a href="https://arxiv.org/abs/2502.01719">MJ-VIDEO: Fine-Grained Benchmarking and Rewarding Video Preferences in Video Generation</a></div>
+            <div class="pub-authors">Haibo Tong†, Zhaoyang Wang†, Zhaorun Chen, Haonian Ji, Shi Qiu, <strong>Siwei Han</strong>, Zhongkai Xue, Yiyang Zhou, Peng Xia, Kexin Geng, Mingyu Ding, Rafael Rafailov, Chelsea Finn, Huaxiu Yao</div>
+            In this paper, we introduce MJ-BENCH-VIDEO, a large-scale video preference benchmark designed to evaluate video generation across five critical aspects: Alignment, Safety, Fineness, Coherence &amp; Consistency, and Bias &amp; Fairness. This benchmark incorporates 28 fine-grained criteria to provide a comprehensive evaluation of video preference. Building upon this dataset, we propose MJ-VIDEO, a Mixture-of-Experts (MoE)-based video reward model designed to deliver fine-grained reward. MJ-VIDEO can dynamically select relevant experts to accurately judge the preference based on the input text-video pair. This architecture enables more precise and adaptable preference judgments.
+          </div>
+        </div>
+
+        <div class='paper-box'>
+          <div class='paper-box-image'>
+            <div>
+              <div class="badge">Preprint</div>
+              <img src='https://github.com/user-attachments/assets/aec63668-5766-41f5-bb49-dfaf61f2dad2' alt="GRAPE" width="100%" />
+            </div>
+          </div>
+          <div class='paper-box-text'>
+            <div class="pub-title"><a href="https://arxiv.org/abs/2411.19309">GRAPE: Generalizing Robot Policy via Preference Alignment</a></div>
+            <div class="pub-authors">Zijian Zhang†, Kaiyuan Zheng†, Zhaorun Chen†, Joel Jang, Yi Li, <strong>Siwei Han</strong>, Chaoqi Wang, Mingyu Ding, Dieter Fox, Huaxiu Yao</div>
+            In this paper, we introduce GRAPE: Generalizing Robot Policy via Preference Alignment. Specifically, GRAPE aligns VLAs on a trajectory level and implicitly models reward from both successful and failure trials to boost generalizability to diverse tasks. Moreover, GRAPE breaks down complex manipulation tasks to independent stages and automatically guides preference modeling through customized spatiotemporal constraints with keypoints proposed by a large vision-language model. We evaluate GRAPE across a diverse array of tasks in both real-world and simulated environments. Experimental results demonstrate that GRAPE enhances the performance of state-of-the-art VLA models.
+          </div>
+        </div>
+
+      </section>
+
+      <section id="edu" class="section container">
+        <h2 class="section__title">📖 Educations</h2>
+        <p>
+          <img src="images/fdu.png" alt="fdu" style="zoom:20%; float: left" />&emsp;
+          <a href="https://www.fudan.edu.cn/en/">Fudan University</a><br />
+          &emsp; Undergraduate student in Computer Science and Technology. <em>2021.09 - 2025.06</em>
+        </p>
+        <p>
+          <img src="images/unc.png" alt="unc" style="zoom:24%; float: left" />&emsp;
+          <a href="https://www.unc.edu/">University of North Carolina at Chapel Hill</a><br />
+          &emsp; Exchange student. <em>2023.08 - 2023.12</em>
+        </p>
+
+        <hr class="spacer-hr" />
+
+        <h2 id="intern" class="section__title">💻 Internships</h2>
+        <p>
+          <img src="images/atc.png" alt="atc" style="zoom:60%; float: left" />&emsp;
+          <a href="https://www.advantest.com/">Advantest, China</a><br />
+          &emsp; R&amp;D Associate Engineer. <em>2024.01 - 2024.05</em>
+        </p>
+        <p>
+          <img src="images/unc.png" alt="unc" style="zoom:24%; float: left" />&emsp;
+          <a href="https://www.unc.edu/">University of North Carolina at Chapel Hill</a><br />
+          &emsp; Research Intern(remote). <em>2024.01 - 2025.02</em>
+        </p>
+
+        <hr class="spacer-hr" />
+
+        <h2 id="awards" class="section__title">🏆 Selected Honors &amp; Awards</h2>
+        <ul>
+          <li>NeurIPS Spotlight Presentation (Top 5%), 2025</li>
+          <li>EMNLP Oral Presentation, 2025 (Top 2%), 2025</li>
+          <li>KDD 2025 Health Day Distinguished Vision Award, 2025</li>
+          <li>ICLR Oral Presentation (Top 1.8%), 2025</li>
+        </ul>
+
+        <hr class="spacer-hr" />
+
+        <h2 id="services" class="section__title">💼 Academic Services</h2>
+        <ul>
+          <li>Workshop Co-Organizer: <a href="https://r2-fm.github.io/">ICML 2025 Workshop on Reliable and Responsible Foundation Models</a></li>
+        </ul>
+
+        <hr class="spacer-hr" />
+
+        <h2 id="lang" class="section__title">🗺️ Languages</h2>
+        <ul>
+          <li>Chinese: Native</li>
+          <li>English: TOEFL 110</li>
+          <li>Japanese: Elementary</li>
+        </ul>
+
+        <hr class="spacer-hr" />
+
+        <h2 id="interests" class="section__title">🌟 Interests</h2>
+        <ul>
+          <li>🎨 Drawing illustration and manga (some of my paintings below)</li>
+        </ul>
+        <p>
+          <img src="https://github.com/user-attachments/assets/ae307f9b-2659-44a5-90f6-4015fda273d9" style="display: inline-block;margin: 10px;width: 25%;" />
+          <img src="https://github.com/user-attachments/assets/a6875d43-8573-4527-ac3b-f270291a7bd4" style="display: inline-block;margin: 10px;width: 25%;" />
+        </p>
+        <ul>
+          <li>🎹 Improvisational piano playing and piano recomposition</li>
+          <li>🎮 Games
+            <ul>
+              <li>Baldur's Gate 3</li>
+              <li>Divinity: Original Sin 2</li>
+              <li>The Legend of Zelda: Breath of the Wild</li>
+              <li>The Elder Scrolls V: Skyrim</li>
+              <li>...</li>
+            </ul>
+          </li>
+          <li>🎶 Musicals
+            <ul>
+              <li>The Phantom of the Opera</li>
+              <li>Elisabeth</li>
+              <li>Dracula</li>
+              <li>...</li>
+            </ul>
+          </li>
+          <li>🐈 Kitty!</li>
+        </ul>
+        <p>
+          <img src="https://github.com/user-attachments/assets/3e87b4f1-f8f7-44b0-aaf2-91eceb4ecce7" style="margin: 10px;width: 45%;border-radius: 20px;" />
+        </p>
+
+        <hr class="spacer-hr" />
+
+        <!-- <h2 id="stats" class="section__title">📊 Statistics</h2> -->
+        <!-- <div>
+        <p>
+          <a href="https://github.com/lillianwei-h">
+            <img src="https://github-readme-stats-git-master-lillianwei-hs-projects.vercel.app/api?username=lillianwei-h&show_icons=true&theme=swift&rank_icon=github" alt="GitHub Stats" />
+          </a>
+        </p>
+        <p>
+          <a href="https://github.com/lillianwei-h">
+            <img src="https://github-readme-stats-git-master-lillianwei-hs-projects.vercel.app/api/top-langs/?username=lillianwei-h&layout=donut&langs_count=8&theme=swift" alt="Top Languages" />
+          </a>
+        </p>
+        </div> -->
+        <div style="width: 400px;margin-left: 0;">
+          <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=4ZvHHwuoR_IRMQg5YfStYBXhWFO0W5lc6-yTkWpTzCs&co=f2f2f2&cmo=387da3&cmn=ff8a00&ct=000000'></script>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span>© Siwei Han 2025</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.min.js"></script>
+  </body>
+  </html>
